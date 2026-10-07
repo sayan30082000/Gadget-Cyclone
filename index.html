@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gadget Cyclone — Smart gadgets, delivered fast</title>
+    <meta name="description" content="Smartwatches, earbuds, chargers, creator gear and smart-home gadgets from Chittagong. Cash on delivery across Bangladesh." />
+    <meta name="theme-color" content="#0b2a55" />
+    <meta property="og:title" content="Gadget Cyclone" />
+    <meta property="og:description" content="Smart gadgets, delivered fast. Cash on delivery across Bangladesh." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Netlify Forms only detects forms present in the static HTML, so the
+         React forms are mirrored here (hidden). Field names must match. -->
+    <form name="order" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="order-id" /><input name="name" /><input name="phone" /><input name="email" />
+      <textarea name="address"></textarea><input name="area" /><textarea name="note"></textarea>
+      <textarea name="items"></textarea><input name="subtotal" /><input name="delivery" /><input name="total" />
+      <input name="payment" />
+    </form>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" /><input name="email" /><input name="phone" /><input name="topic" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

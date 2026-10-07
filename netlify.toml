@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Client-side routing: every path serves the app, React Router picks the page.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
